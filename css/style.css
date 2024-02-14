@@ -61,7 +61,7 @@ label {
     padding: 4px;
 }
 
-.my-button {
+.converse-button {
     background-color: lightseagreen;
     color: white;
     border-radius: 10px;
@@ -71,11 +71,11 @@ label {
     margin-top: 2px;
 }
 
-.my-button:hover {
+.converse-button:hover {
     background-color: rgb(23, 131, 125);
 }
 
-.my-button:active {
+.converse-button:active {
     background-color: green;
     transform: translateY(1px);
 }
@@ -131,4 +131,24 @@ label {
 
 #input-F:focus {
     border: solid rgb(230, 24, 24)
+}
+
+.container {
+    width: 100%;
+    background: indianred;
+    display: flex;
+    flex-direction: column;
+}
+
+button.btn {
+    padding: 5px;
+    min-width: 30px;
+}
+
+button.btn.btn-ac {
+    min-width: 60px;
+}
+
+.input{
+    padding: 8px;
 }
