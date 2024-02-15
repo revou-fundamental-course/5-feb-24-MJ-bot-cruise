@@ -1,7 +1,7 @@
 function convert() {
     var temptInput = parseFloat(document.getElementById("tempt").value);
     if (isNaN(temptInput)) {
-        alert("nilainya mana bro?");
+        alert("input yang bener dong bro!");
         return;
     }
 
@@ -13,7 +13,7 @@ function convert() {
     } else {
         if ( unit === "fahrenheit") {
         result = (temptInput - 32) / 1.8 ;
-        out = out.toFixed(2) + " ℃";
+        out = result.toFixed(2) + " ℃";
         }
     }
     document.getElementById("out").innerHTML = out;
