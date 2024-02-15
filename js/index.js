@@ -1,30 +1,26 @@
-var calcDisplay = ""
-
-function btnClick(e) {
-    if (e == "1" || e == "2" || e == "3" || e == "4" || e == "/" || e == "*") {
-        if (e == "AC") {
-            calcDisplay = ""
-        } else {
-            console.log(calcDisplay)
-            calcDisplay = calcDisplay + e
-        }
-        document.getElementById("display").value = calcDisplay
-    } else {
-        console.log("input harus angka dan simbol")
+function convert() {
+    var temptInput = parseFloat(document.getElementById("tempt").value);
+    if (isNaN(temptInput)) {
+        alert("nilainya mana bro?");
+        return;
     }
+
+    var unit = document.getElementById("unit").value;
+    var result, out;
+    if (unit === "celsius") {
+        result = temptInput *  1.8 + 32;
+        out = result.toFixed(2) + " ℉";
+    } else {
+        result = (temptInput - 32) / 1.8 ;
+        out = hasil.toFixed(2) + " ℃";
+    }
+    document.getElementById("out").innerHTML = out;
+    document.getElementById("out").classList.remove("error");
 }
 
-document.getElementById("display").addEventListener('input', function displayChange() {
-    console.log(this.value)
-    let e = this.value
-    
-    let chars = /^[0-9][\+]+$/
+function reset() {
+    document.getElementById("tempt").value = "";
+    document.getElementById("out").innerHTML = "";
+    document.getElementById("out").classList.remove("error");
 
-    if (chars.test(e)) {
-        console.log("digits")
-    } else {
-        alert("not digits")
-    }
-
-})
-
+}

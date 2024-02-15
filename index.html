@@ -5,27 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konverter Suhu</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
 </head>
 <body>
     <header id="navigation-bar">
         <h3 id="logo">Put Logo</h3>
         <h3 id="title">Konverter Celcius & Fahrenheit</h3>
         <nav id="navigation">
-            <a href="">Hasil</a>
-            <a href="">Rumus</a>
+            <a href="" onclick="btnClick(this.innerText)">Rumus</a>
         </nav>
     </header>
     <div class="input-section">
-        <label for="input-field">Celcius</label>
-        <input type="number" id="input-field">
+        <label id="temperatur" for="tempt">Suhu (°C/°F)</label>
+        <input type="number" id="tempt">
     </div>
-    <button class="converse-button">Konversi</button>
-    <button class="reset-button">Reset</button>
-    <button class="reverse-button">Reverse</button>
+    <div class="form-group">
+        <label id="label"  for="unit">Pilih Unit:</label>
+        <select id="unit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+    </div>
+    <button onclick="convert()" id="convert-button">Konversi</button>
+    <button onclick="reset()" id="reset-button">Reset</button>
 
-    <div class="input-section">
-        <label id="Fahrenheit" for="input-F">Fahrenheit</label>
-        <input type="number" id="input-F">
+    <br>
+    <div id="out" class="result"></div>
+    <br>
+</div>
+    <div class="formula">
+       <p id="C-F">Konversi dari Celsius ke Fahrenheit
+        Rumus : ℉ = (℃ * 1.8) +32</p>
+        <p id="F-C">Konversi dari Fahrenheit ke Celsius
+        Rumus : ℃ = (℉ -32) /1.8</p>
     </div>
-    
+    <script src="js/index.js"></script>
+</body>
+</html>

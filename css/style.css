@@ -45,14 +45,14 @@ header {
     flex-direction: column;
 }
 
-#input-field {
+#tempt {
     outline: none;
     border-radius: 5px;
     border: solid black;
     padding: 8px 8px;
 }
 
-#input-field:focus {
+#tempt:focus {
     border: solid rgb(16, 118, 243);
 }
 
@@ -61,94 +61,84 @@ label {
     padding: 4px;
 }
 
-.converse-button {
+#convert-button {
     background-color: lightseagreen;
     color: white;
     border-radius: 10px;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
-.converse-button:hover {
+#convert-button:hover {
     background-color: rgb(23, 131, 125);
 }
 
-.converse-button:active {
+#convert-button:active {
     background-color: green;
     transform: translateY(1px);
 }
 
-.reset-button {
+#reset-button {
     background-color: rgb(230, 98, 98);
     color: white;
     border-radius: 10px;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
-.reset-button:hover {
+#reset-button:hover {
     background-color: rgb(167, 71, 71);
 }
 
-.reset-button:active {
+#reset-button:active {
     background-color: rgb(114, 31, 31);
     transform: translateY(1px);
 }
 
-.reverse-button {
-    background-color: rgb(29, 126, 196);
-    color: white;
-    border-radius: 10px;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    margin margin-top: 2px;
-}
 
-.reverse-button:hover {
-    background-color: rgb(19, 86, 145);
-}
+/* form-group */
 
-.reverse-button:active {
-    background-color: rgb(64, 99, 147);
-    transform: translateY(1px);
-}
-#Fahrenheit {
-    color: rgb(231, 93, 93);
-    padding: 4px;
-}
-
-#input-F {
-    outline: none;
-    border-radius: 5px;
-    border: solid black;
-    padding: 8px 8px;
-}
-
-#input-F:focus {
-    border: solid rgb(230, 24, 24)
-}
-
-.container {
-    width: 100%;
-    background: indianred;
+.form-group {
     display: flex;
     flex-direction: column;
 }
 
-button.btn {
-    padding: 5px;
-    min-width: 30px;
+#unit {
+    color: rgb(0, 0, 0);
+    padding: 8px 8px;
+    margin-top: 1px;
 }
 
-button.btn.btn-ac {
-    min-width: 60px;
+#label {
+    color: rgb(199, 112, 112);
 }
 
-.input{
-    padding: 8px;
+/* formula */
+
+.formula {
+    margin-top: 5px;
+    border-radius: 10px;
+    border: solid black ;
+    padding: 8px 16px;    
+    font-size: ;
+}
+
+#C-F {
+    flex-direction: column;
+    font-weight: bold;
+}
+
+#F-C {
+    flex-direction: column;
+    font-weight: bold;
+}
+
+/* result */
+#out {
+    margin-top: 3px;
+    font-weight: bold;
 }
